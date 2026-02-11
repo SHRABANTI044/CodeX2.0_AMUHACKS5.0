@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://code-x2-0-amuhacks-5-0.vercel.app/api';
 
 export const createUser = async (userData) => {
   const response = await axios.post(`${API_BASE_URL}/user`, userData);
