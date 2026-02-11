@@ -1,0 +1,362 @@
+/* Dashboard Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  background: linear-gradient(135deg, #eaf3ff, #d6e6fb);
+  min-height: 100vh;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.welcome-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.welcome-left h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #1f2d3d;
+  margin: 0;
+}
+
+.welcome-left p {
+  font-size: 15px;
+  color: #6b7c93;
+  margin: 8px 0 0 0;
+}
+
+.personalize-btn {
+  background: white;
+  border: 1px solid #dce6f5;
+  border-radius: 10px;
+  padding: 10px 18px;
+  color: #2c3e50;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  padding: 24px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2d3d;
+  margin: 0 0 10px 0;
+}
+
+.divider {
+  height: 1px;
+  background: #edf2fa;
+  margin: 12px 0 20px 0;
+}
+
+/* Semi-circle gauge */
+.gauge-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.gauge {
+  width: 120px;
+  height: 60px;
+  border-radius: 60px 60px 0 0;
+  background: #e5e7eb;
+  position: relative;
+  overflow: hidden;
+}
+
+.gauge-fill {
+  height: 100%;
+  background: linear-gradient(to right, #ef4444, #f59e0b, #10b981);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.gauge-score {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.gauge-text {
+  font-size: 14px;
+  color: #6b7c93;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Study Plan */
+.study-plan-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f4fb;
+}
+
+.subject-square {
+  width: 12px;
+  height: 12px;
+  background: #4f8cff;
+  margin-right: 8px;
+  border-radius: 2px;
+}
+
+.subject-name {
+  flex: 1;
+  font-size: 14px;
+  color: #1f2d3d;
+}
+
+.subject-time {
+  font-size: 14px;
+  color: #6b7c93;
+}
+
+.total-time {
+  font-weight: bold;
+  margin-top: 16px;
+  text-align: center;
+}
+
+/* Progress Tracker */
+.progress-section {
+  margin-bottom: 16px;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #eaf1fb;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4f8cff;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.days-left {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1f2d3d;
+  text-align: right;
+}
+
+.study-hours-text {
+  font-size: 14px;
+  color: #6b7c93;
+  margin-top: 8px;
+}
+
+/* Subject Backlogs */
+.backlog-item {
+  background: #f7faff;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.backlog-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.backlog-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2d3d;
+}
+
+.backlog-difficulty {
+  font-size: 12px;
+  color: #6b7c93;
+}
+
+.backlog-progress {
+  width: 60px;
+  height: 4px;
+  background: #e6edf7;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.backlog-fill {
+  height: 100%;
+  background: #4f8cff;
+  width: 0%;
+}
+
+/* Difficulty Badge */
+.difficulty-badge {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: white;
+  color: #10b981; /* Default to green for Easy */
+}
+
+.difficulty-badge.medium {
+  color: #f59e0b;
+}
+
+.difficulty-badge.hard {
+  color: #ef4444;
+}
+
+/* What-If Simulator */
+.simulator-dropdown {
+  margin-bottom: 16px;
+}
+
+.simulator-dropdown select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+  background: white;
+}
+
+.recover-text {
+  font-size: 16px;
+  color: #1f2d3d;
+  margin-bottom: 16px;
+}
+
+.small-gauge {
+  height: 6px;
+  background: #e6edf7;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.small-gauge-fill {
+  height: 100%;
+  background: linear-gradient(to right, #ef4444, #f59e0b, #10b981);
+  width: 0%;
+}
+
+.bullet-points {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.bullet-points li {
+  font-size: 14px;
+  color: #6b7c93;
+  margin-bottom: 4px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.page-number {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e6edf7;
+  color: #4f8cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 16px;
+  }
+
+  .welcome-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .welcome-left h1 {
+    font-size: 24px;
+  }
+
+  .welcome-left p {
+    font-size: 14px;
+  }
+
+  .personalize-btn {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+
+  .main-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .gauge {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px 50px 0 0;
+  }
+
+  .days-left {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-left h1 {
+    font-size: 20px;
+  }
+
+  .welcome-left p {
+    font-size: 12px;
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .gauge {
+    width: 80px;
+    height: 40px;
+    border-radius: 40px 40px 0 0;
+  }
+
+  .days-left {
+    font-size: 28px;
+  }
+}
